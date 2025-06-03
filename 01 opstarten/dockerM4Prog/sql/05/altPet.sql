@@ -1,0 +1,2 @@
+ALTER TABLE petsData DROP COLUMN owner;
+ALTER TABLE petsData ADD ownerid INT NOT NULL;
