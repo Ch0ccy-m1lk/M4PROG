@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+</head>
+<body>
+  <div class="cart" aria-label="Shopping cart with 0 items" title="Shopping cart">
+    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+    <div class="cart__badge" aria-live="polite" aria-atomic="true" id="cart-count">0</div>
+  </div>
+
+  <section class="products" aria-label="Product list">
+    <article class="product" tabindex="0" aria-labelledby="pacific-title pacific-subtitle pacific-price">
+      <img
+        src="images/pacific-punch.png"
+        alt="pacific punch monster. very very nice ofc."
+        class="product__img"
+        width="150"
+        height="150"
+        loading="lazy"
+      />
+      <h2 class="product__price" id="pacific-price">$2.34</h2>
+      <h3 class="product__title" id="pacific-title">pacific punch</h3>
+      <p class="product__rating" aria-label="Five star rating">★★★★★</p>
+      <button class="product__button" type="button">Add to Cart</button>
+      <button class="product__remove-button" type="button" aria-label="Remove pacific punch from cart" title="Remove from cart">×</button>
+    </article>
+
+    <article class="product product--not-available" tabindex="0" aria-labelledby="mango-monster-title mango-monster-subtitle mango-monster-price" aria-describedby="mango-monster-notavailable">
+      <div class="product__not-available-label" id="mango-notavailable">not available</div>
+      <img
+        src="images/mango-monster.png"
+        alt="mango monster"
+        class="product__img"
+        width="150"
+        height="150"
+        loading="lazy"
+      />
+      <h2 class="product__price" id="mango-monster-price">$2.34</h2>
+      <h3 class="product__title" id="mango-monster-title">mango monster</h3>
+      <p class="product__rating" aria-label="Five star rating">★★★★★</p>
+      <button class="product__button product__button--disabled" type="button" disabled>Out of stock</button>
+      <button class="product__remove-button" type="button" aria-label="Remove mango-monster from cart" title="Remove from cart">×</button>
+    </article>
+
+    <article class="product" tabindex="0" aria-labelledby="white-monster-title white-monster-subtitle white-monster">
+      <img
+        src="images/white-monster.png"
+        alt="white monster"
+        class="product__img"
+        width="150"
+        height="150"
+        loading="lazy"
+      />
+      <h2 class="product__price" id="white-monster">$2.34</h2>
+      <h3 class="product__title" id="white-monster-title">white monster</h3>
+      <p class="product__rating" aria-label="Five star rating">★★★★★</p>
+      <button class="product__button" type="button">Add to Cart</button>
+      <button class="product__remove-button" type="button" aria-label="Remove white-monster from cart" title="Remove from cart">×</button>
+    </article>
+  </section>
+</body>
+</html>
